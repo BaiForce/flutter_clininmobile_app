@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clinicmobile_app/core/components/buttons.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
-import 'package:flutter_clinicmobile_app/presentation/auth/pages/terms_of_service_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/auth/widgets/text_list_widget.dart';
+
+import '../../../core/components/buttons.dart';
+import '../../../core/components/spaces.dart';
+import '../../../core/constants/colors.dart';
+import '../widgets/text_list_widget.dart';
+import 'terms_of_service_page.dart';
 
 class PrivacyPolicyPage extends StatelessWidget {
   const PrivacyPolicyPage({super.key});

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/doctor/pages/admin_doctor_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/home/pages/admin_home_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/profile/pages/profile_admin_page.dart';
 
+import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
+import '../../../../core/assets/assets.gen.dart';
+import '../../../../core/constants/colors.dart';
 import '../../../home/widgets/nav_item.dart';
+import '../../doctor/pages/admin_doctor_page.dart';
+import '../../profile/pages/profile_admin_page.dart';
+import 'admin_home_page.dart';
 
 class AdminMainPage extends StatefulWidget {
   const AdminMainPage({super.key});

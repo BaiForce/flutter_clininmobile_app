@@ -1,10 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
+
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/doctor/pages/edit_doctor_page.dart';
+
+import '../../../../core/assets/assets.gen.dart';
+import '../../../../core/components/spaces.dart';
+import '../../../../core/constants/colors.dart';
+import '../pages/edit_doctor_page.dart';
+
 
 
 

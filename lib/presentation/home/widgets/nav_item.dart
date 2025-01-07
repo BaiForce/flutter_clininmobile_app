@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
 import '../../../core/components/spaces.dart';
 import '../../../core/constants/colors.dart';
+
 
 class NavItem extends StatelessWidget {
   final String iconPath;

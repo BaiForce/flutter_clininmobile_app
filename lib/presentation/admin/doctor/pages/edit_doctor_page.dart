@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clinicmobile_app/core/components/buttons.dart';
-import 'package:flutter_clinicmobile_app/core/components/custom_text_field.dart';
-import 'package:flutter_clinicmobile_app/core/components/custom_text_field_height.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
+
+import '../../../../core/components/buttons.dart';
+import '../../../../core/components/custom_text_field.dart';
+import '../../../../core/components/custom_text_field_height.dart';
+import '../../../../core/components/spaces.dart';
+import '../../../../core/constants/colors.dart';
 
 
 class EditDoctorPage extends StatefulWidget {
