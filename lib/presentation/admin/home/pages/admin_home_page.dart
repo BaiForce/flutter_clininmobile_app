@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
-import 'package:flutter_clinicmobile_app/presentation/doctor/history/widgets/card_doctor_history.dart';
+
+import '../../../../core/assets/assets.gen.dart';
+import '../../../../core/components/spaces.dart';
+import '../../../../core/constants/colors.dart';
+import '../../../doctor/history/widgets/card_doctor_history.dart';
 
 class AdminHomePage extends StatefulWidget {
   const AdminHomePage({super.key});

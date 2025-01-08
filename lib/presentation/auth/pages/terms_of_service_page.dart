@@ -7,7 +7,6 @@ import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart'
 import 'package:flutter_clinicmobile_app/presentation/auth/pages/data_pengguna_page.dart';
 import 'package:flutter_clinicmobile_app/presentation/auth/widgets/text_list_widget.dart';
 
-
 class TermsOfServicePage extends StatelessWidget {
   const TermsOfServicePage({super.key});
 

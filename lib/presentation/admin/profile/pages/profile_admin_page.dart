@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
+
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
+
+import '../../../../core/assets/assets.gen.dart';
+import '../../../../core/components/spaces.dart';
+import '../../../../core/constants/colors.dart';
 
 class ProfileAdminPage extends StatelessWidget {
   const ProfileAdminPage({super.key});

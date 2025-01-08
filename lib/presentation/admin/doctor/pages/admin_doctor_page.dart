@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
 import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/doctor/pages/add_doctor_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/doctor/widgets/card_doctor_widget.dart';
+import '../../../../core/assets/assets.gen.dart';
+import '../../../../core/components/buttons.dart';
+import '../../../../core/components/custom_text_field.dart';
+import '../../../../core/components/custom_text_field_height.dart';
+import '../../../../core/components/spaces.dart';
+import '../../../../core/constants/colors.dart';
+import '../widgets/card_doctor_widget.dart';
+import 'add_doctor_page.dart';
 
 class AdminDoctorPage extends StatefulWidget {
   const AdminDoctorPage({super.key});

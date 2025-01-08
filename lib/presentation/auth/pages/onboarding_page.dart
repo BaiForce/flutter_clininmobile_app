@@ -1,15 +1,42 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_clinicmobile_app/core/assets/assets.gen.dart';
-import 'package:flutter_clinicmobile_app/core/components/buttons.dart';
-import 'package:flutter_clinicmobile_app/core/components/spaces.dart';
-import 'package:flutter_clinicmobile_app/core/constants/colors.dart';
-import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
-import 'package:flutter_clinicmobile_app/presentation/admin/home/pages/admin_main_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/auth/pages/privacy_policy_page.dart';
-import 'package:flutter_clinicmobile_app/presentation/doctor/home/pages/doctor_home_page.dart';
 
-class OnboardingPage extends StatelessWidget {
+import 'package:flutter_clinicmobile_app/core/extensions/build_context_ext.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+import '../../../core/assets/assets.gen.dart';
+import '../../../core/components/buttons.dart';
+import '../../../core/components/spaces.dart';
+import '../../../core/constants/colors.dart';
+import '../../admin/home/pages/admin_main_page.dart';
+import '../../doctor/home/pages/doctor_home_page.dart';
+import 'privacy_policy_page.dart';
+
+class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
+
+  @override
+  State<OnboardingPage> createState() => _OnboardingPageState();
+}
+
+class _OnboardingPageState extends State<OnboardingPage> {
+  Future<UserCredential> signInWithGoogle() async {
+    // Trigger the authentication flow
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+    // Obtain the auth details from the request
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
+
+    // Create a new credential
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+
+    // Once signed in, return the UserCredential
+    return await FirebaseAuth.instance.signInWithCredential(credential);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -81,8 +108,9 @@ class OnboardingPage extends StatelessWidget {
                       ),
                       Button.filled(
                         height: 48,
-                        onPressed: () {
-                          context.push(const PrivacyPolicyPage());
+                        onPressed: () async {
+                          await signInWithGoogle();
+                          // context.push(const PrivacyPolicyPage());
                         },
                         label: 'Masuk dengan Google',
                         icon: Image.asset(
